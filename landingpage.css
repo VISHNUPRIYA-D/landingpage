@@ -4,28 +4,21 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(255, 255, 255);
-    overflow-x: hidden;   
+    background-color: rgb(255, 255, 255); 
 }
 .icon{
-    position: relative;
     background-color: rgb(88, 85, 85);
-    height: 50px;
-    width: 100%;
-    display: flex;
+    padding: 5px;
 } 
 .icon h1{
     color: rgb(255, 249, 249);
-    margin-left: 20px;
     margin-top: 2px;
     text-align: center;
     text-shadow: 2px 2px 8px  #dfdddd;
 }
-.product .detail{
-    float:right;
-    width: 600px;
-    margin-top: 60px;
-    margin-right:30px ;  
+.detail{
+    margin-top: 40px;
+    margin-left: 10px;
     font-family:'Times New Roman', Times, serif ;
     
 }
@@ -40,15 +33,16 @@ body{
     color: rgb(42, 42, 236);
     text-decoration: none;
 }
-.product span{
-    width: 300px;
-    height: 500px;
+.product{
+    float: left;
 }
-span img{
-    margin-top: 50px;
+.product img{
+    width:350px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 0;
 }
 .star{
-    margin-right: 25%;
     margin-top: 10px;
     font-size: 18px;
 }
@@ -65,10 +59,9 @@ span img{
 }
 .price{
     font-size: 20px;
-    float: right;
     margin-top: 10px;
-    margin-right: 70%;
-    display: felx;
+    margin-right: 50%;
+    display:inline;
 }
 .price i{
    font-size: 25px;
@@ -80,26 +73,21 @@ span img{
     font-weight: 500;
 }
 .base{
-    margin:10px;
-    display: inline-block;
-}
-.base img{
-    margin: 40px;
-    margin-top: 30px;
-    margin-bottom: 0;
-    width: 50px;
-    height: 50px;
-}
-.detail .text{
+    margin-top: 20px;
     display: flex;
-    color: rgb(109, 109, 235);
 }
-.text p{
-    width: 110px;
-    margin: 15px;
+.base .more{
+    justify-content:space-between;
+}
+.more img{
+    width: 35px;
+}
+.more .purchase p{
+    color: rgb(50, 160, 187);
+    margin: 5px;
 }
 .about{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .about h2{
     margin: 5px;
@@ -113,11 +101,12 @@ span img{
 }
 .note{
     font-size: 18px;
-    margin: 10px;
+    margin-left: 10px;
+    
 }
 .button button{
    display: block;
-   width: 400px;
+   width: 350px;
    margin-left: auto;
    margin-right: auto;
    margin-top: 15px;
@@ -169,13 +158,13 @@ span img{
 }
 .similar h3{
     border-top: 1.7px solid black;
-    margin: 20px;
+    margin: 15px;
 }
 .similar .phone{
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
-    margin: 10px;
+    margin: 8px;
 }
 .phone .swiper-slide{
     width:290px ;
